@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;600;700;900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600;1,700&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap');
+:root {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Simplemente centramos en la pantalla */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.card {
+    transform: translateX(-15px);
+    width: 16rem;
+
+    height: 8rem;
+
+    background: #fff;
+    
+    border: 0.5px solid #6c6c6c;
+    border-radius: 0.5rem;
+    /* Parte para el doble recuadro */
+    box-shadow: 15px 15px 0 -0.5px #fff, 15px 15px 0 0 #6c6c6c;
+
+    padding: 0.5rem;
+}
+
+.card-info {
+    display: flex;
+    justify-content: space-around;
+
+    flex-direction: column;
+    align-items: stretch;
+
+    height: 100%;
+}
+
+.apiario-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.separator{
+
+    height: calc(100% - 20px);
+    background-color: #b0b0b0;
+    width: 0.5px;
+
+}
+.cant-colmenas {
+    font-weight: 600;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-mostrar {
+    padding: 0.9rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+
+    border-radius: 1.5rem;
+    border: none;
+    background-color: #F7EE15;
+
+    font-weight: 700;
+    font-size: 0.7em;
+    transition: 100ms;
+}
+
+.btn-mostrar:active {
+    background-color: #c8c218;
+
+}
+
+/* parte de las colmenas */
+
+.hive{
+    display: none;
+    height: 0;
+    overflow: hidden;
+    transition: 1000ms linear;
+}
+
+.hive.visible {
+    display: block;
+    height: 100px; /* Ajusta la altura según sea necesario */
+}
