@@ -26,7 +26,7 @@
     border: 0.5px solid #6c6c6c;
     border-radius: 0.5rem;
     /* Parte para el doble recuadro */
-    box-shadow: 15px 15px 0 -0.5px #fff, 15px 15px 0 0 #6c6c6c;
+    box-shadow: -5px -5px 0 -1px #000000, -5px -5px 0 0 #6c6c6c;
 
     padding: 0.5rem;
 }
