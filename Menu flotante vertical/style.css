@@ -1,0 +1,69 @@
+:root {
+    --bg-color: #FBBF23;
+    --hover-color: #f8a916;
+    --active-color: #FDA401;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+
+    place-items: center;
+}
+
+.container-menu {
+    position: fixed;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+
+    height: fit-content;
+    width: 64px;
+
+    border-radius: 9999px;
+    background-color: var(--bg-color);
+}
+
+.menu-btn-container{
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    padding-left: 8px;
+    padding-right: 8px;
+
+    gap: 8px;
+}
+
+.btn-menu {
+    color: #fff;
+
+    border-radius: 9999px;
+
+    height: 32px;
+    padding: 8px;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+    text-decoration: none;
+
+    transition: all 200ms ease-in-out;
+}
+.icon-btn{
+    width: 24px;
+    height: 24px;
+}
+
+.btn-menu.activate{
+    background-color: var(--active-color);
+}
+
+.btn-menu:hover {
+    background-color: var(--hover-color);
+}
