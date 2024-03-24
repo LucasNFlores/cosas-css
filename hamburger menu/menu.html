@@ -1,0 +1,56 @@
+<div class="text-4xl overflow-hidden hover:cursor-pointer" onclick="manageMenu(this)">
+    <span class="material-symbols-outlined" id="action-menu">
+        menu
+    </span>
+</div>
+
+<div class="z-50 fixed bg-slate-900/50 w-full h-[100vh] flex flex-col items-center justify-center text-white text-4xl tracking-normal hidden"
+    id="hamburger">
+    <ul>
+
+        <li>
+            <a href="#">Inicio</a>
+        </li>
+        <li>
+            <a href="#">Apiarios</a>
+        </li>
+        <li>
+            <a href="#">Colmenas</a>
+        </li>
+        <li>
+            <a href="#">Variables</a>
+        </li>
+        <li>
+            <a href="#">Datos</a>
+        </li>
+        <li>
+            <a href="#">Usuarios</a>
+        </li>
+        <li>
+            <a href="#">Perfil</a>
+        </li>
+        <li>
+            <a href="#">Salir</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // falta hacer la funcion de cerrar menu
+    function manageMenu() {
+        // Toggle the menu state based on current iconBtn.value
+        if (iconBtn.value === "menu") {
+            iconBtn.value = "close"
+            ham.classList.remove("hidden");
+        } else {
+            // Update the menu visibility accordingly
+
+            iconBtn.value = "menu"
+            ham.classList.add("hidden");
+        }
+
+
+        console.log("gsddg");
+    }
+
+</script>

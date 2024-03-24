@@ -1,0 +1,38 @@
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.pentagono {
+    width: 60px;
+    height: 70px;
+    position: relative;
+    background-color: #f0de3b;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+
+    display: grid;
+    place-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.icono-flecha{
+    height: 25px;
+}
+
+.pentagono:hover>svg {
+    animation: mover 1.5s infinite ease-in-out;
+}
+.pentagono:hover {
+    background-color: #f5bf4a;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateX(0px); 
+    }50% {
+        transform: translateX(5px);
+    } 100%{
+        transform: translateX(0px);
+    } 
+}
